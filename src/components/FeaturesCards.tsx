@@ -24,7 +24,7 @@ export default function FeaturesCards() {
   return (
     <div className="mt-4 grid gap-6 md:grid-cols-3">
       {features.map((f, i) => (
-        <Card key={i} className="rounded-none bg-beige transition-all duration-300 hover:scale-[1.02]">
+        <Card key={i} className="rounded-none bg-warm-white transition-all duration-300 hover:scale-[1.02]">
           <CardHeader className="p-8 pb-0">
             <CardTitle className="font-display text-2xl font-bold tracking-tight text-accent">
               {f.title}

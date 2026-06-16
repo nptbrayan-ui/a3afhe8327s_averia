@@ -35,10 +35,10 @@ export default function TeamCards() {
   return (
     <div className="mt-16 grid gap-px bg-ink/10 md:grid-cols-4">
       {team.map((m) => (
-        <Card key={m.name} className="group rounded-none bg-warm-white transition-all duration-300 hover:-translate-y-1 hover:border-ink/40 hover:shadow-lg hover:shadow-ink/5">
+        <Card key={m.name} className="group rounded-none bg-accent-light transition-all duration-300 hover:-translate-y-1 hover:border-white/30 hover:shadow-lg hover:shadow-accent/5">
           <CardHeader>
             {m.photo ? (
-              <div className="h-32 w-32 overflow-hidden border border-ink/10 transition-all duration-300 group-hover:border-ink">
+              <div className="h-32 w-32 overflow-hidden border border-white/20 transition-all duration-300 group-hover:border-white">
                 <img
                   src={m.photo}
                   alt={m.name}
@@ -47,17 +47,17 @@ export default function TeamCards() {
                 />
               </div>
             ) : (
-              <div className="flex h-32 w-32 items-center justify-center border border-ink/10 text-xs font-bold uppercase tracking-widest text-ink/40 transition-all duration-300 group-hover:border-ink">
+              <div className="flex h-32 w-32 items-center justify-center border border-white/20 text-xs font-bold uppercase tracking-widest text-white/50 transition-all duration-300 group-hover:border-white">
                 VA
               </div>
             )}
             <div className="mt-4">
-              <p className="font-display text-lg font-bold tracking-tight">{m.name}</p>
-              <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-accent">{m.role}</p>
+              <p className="font-display text-xl font-bold tracking-tight text-white">{m.name}</p>
+              <p className="mt-0.5 text-xs font-medium uppercase tracking-wider text-white/70">{m.role}</p>
             </div>
           </CardHeader>
           <CardContent>
-            <p className="text-sm leading-relaxed text-ink/50">{m.bio}</p>
+            <p className="text-sm leading-relaxed text-white/70">{m.bio}</p>
           </CardContent>
         </Card>
       ))}
