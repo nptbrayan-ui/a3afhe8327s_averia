@@ -1,9 +1,29 @@
 ---
 const team = [
-  { name: 'Brayan Nguyen', role: 'Designer', bio: 'Shapes the look and feel of Aveira.', initials: 'BN' },
-  { name: 'Nikhil Tadepalli', role: 'Business & Lead', bio: 'Drives the vision and strategy.', initials: 'NT' },
-  { name: 'Vivaan Agarwaal', role: 'Software', bio: 'Builds the firmware and software.', initials: 'VA' },
-  { name: 'Arnav Sharma', role: 'Finance & Planning', bio: 'Manages funding, budget, and timelines.', initials: 'AS' },
+  {
+    name: 'Brayan Nguyen',
+    role: 'Designer',
+    bio: 'Shapes the look and feel of Aveira.',
+    photo: '/headshot-brayan.jpeg',
+  },
+  {
+    name: 'Nikhil Tadepalli',
+    role: 'Business & Lead',
+    bio: 'Drives the vision and strategy.',
+    photo: '/headshot-nikhil.jpeg',
+  },
+  {
+    name: 'Vivaan Agarwaal',
+    role: 'Software',
+    bio: 'Builds the firmware and software.',
+    photo: '',
+  },
+  {
+    name: 'Arnav Sharma',
+    role: 'Finance & Planning',
+    bio: 'Manages funding, budget, and timelines.',
+    photo: '/headshot-arnav.jpeg',
+  },
 ];
 ---
 
@@ -16,9 +36,18 @@ const team = [
     <div class="mt-16 grid gap-px bg-ink/10 md:grid-cols-4">
       {team.map((m) => (
         <div class="flex flex-col gap-4 bg-warm-white p-8">
-          <div class="flex h-24 w-24 items-center justify-center border border-ink/20 text-xs font-bold uppercase tracking-widest text-ink/40">
-            {m.initials}
-          </div>
+          {m.photo ? (
+            <img
+              src={m.photo}
+              alt={m.name}
+              class="h-24 w-24 object-cover border border-ink/20"
+              loading="lazy"
+            />
+          ) : (
+            <div class="flex h-24 w-24 items-center justify-center border border-ink/20 text-xs font-bold uppercase tracking-widest text-ink/40">
+              VA
+            </div>
+          )}
           <div>
             <h3 class="font-display text-lg font-bold tracking-tight">{m.name}</h3>
             <p class="mt-0.5 text-xs font-medium uppercase tracking-wider text-accent">{m.role}</p>
