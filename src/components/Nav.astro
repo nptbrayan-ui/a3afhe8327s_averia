@@ -1,0 +1,65 @@
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-ink/5 bg-beige/30 backdrop-blur-md">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/" class="text-sm font-bold uppercase tracking-widest text-ink">
+      Aveira Clocks
+    </a>
+    <div class="hidden items-center gap-8 text-sm font-medium text-ink/60 md:flex">
+      <a href="#features" class="transition-colors hover:text-ink">Features</a>
+      <a href="#about" class="transition-colors hover:text-ink">About</a>
+      <a href="#team" class="transition-colors hover:text-ink">Team</a>
+      <a href="#gallery" class="transition-colors hover:text-ink">Gallery</a>
+      <a href="#support" class="transition-colors hover:text-ink">Support</a>
+      <a href="#contact" class="transition-colors hover:text-ink">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a
+        href="#support"
+        class="hidden bg-ink px-5 py-2.5 text-xs font-medium uppercase tracking-wider text-white transition-all hover:bg-accent sm:inline-block"
+      >
+        Support Us
+      </a>
+      <button id="menu-toggle" class="flex h-10 w-10 items-center justify-center md:hidden" aria-label="Toggle menu">
+        <svg id="menu-icon" class="h-5 w-5 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div id="mobile-drawer" class="fixed inset-0 z-40 hidden border-b border-ink/5 bg-warm-white md:hidden">
+    <div class="flex h-full flex-col items-center justify-center gap-8 text-sm font-medium uppercase tracking-wider">
+      <a href="#features" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>Features</a>
+      <a href="#about" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>About</a>
+      <a href="#team" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>Team</a>
+      <a href="#gallery" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>Gallery</a>
+      <a href="#support" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>Support</a>
+      <a href="#contact" class="text-ink/60 transition-colors hover:text-ink" data-nav-close>Contact</a>
+      <a href="#support" class="mt-6 bg-ink px-8 py-3 text-xs font-medium uppercase tracking-wider text-white transition-all hover:bg-accent" data-nav-close>
+        Support Us
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const drawer = document.getElementById('mobile-drawer');
+  const icon = document.getElementById('menu-icon');
+  const closeLinks = document.querySelectorAll('[data-nav-close]');
+
+  toggle?.addEventListener('click', () => {
+    const open = drawer?.classList.toggle('hidden');
+    if (!open) {
+      icon.innerHTML = '<path d="M18 6L6 18M6 6l12 12" />';
+    } else {
+      icon.innerHTML = '<path d="M3 12h18M3 6h18M3 18h18" />';
+    }
+  });
+
+  closeLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      drawer?.classList.add('hidden');
+      icon.innerHTML = '<path d="M3 12h18M3 6h18M3 18h18" />';
+    });
+  });
+</script>
