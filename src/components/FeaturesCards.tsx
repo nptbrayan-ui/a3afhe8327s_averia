@@ -24,14 +24,14 @@ export default function FeaturesCards() {
   return (
     <div className="mt-4 grid gap-6 md:grid-cols-3">
       {features.map((f, i) => (
-        <Card key={i} className="rounded-none bg-warm-white transition-all duration-300 hover:scale-[1.02]">
+        <Card key={i} className="rounded-none bg-pastel transition-all duration-300 hover:scale-[1.02]">
           <CardHeader className="p-8 pb-0">
-            <CardTitle className="font-display text-2xl font-bold tracking-tight text-accent">
+            <CardTitle className="font-display text-2xl font-bold tracking-tight text-white">
               {f.title}
             </CardTitle>
           </CardHeader>
           <CardContent className="p-8 pt-4">
-            <p className="text-sm leading-relaxed text-ink/60">{f.desc}</p>
+            <p className="text-sm leading-relaxed text-white/80">{f.desc}</p>
           </CardContent>
         </Card>
       ))}
