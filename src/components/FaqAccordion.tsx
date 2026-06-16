@@ -23,7 +23,7 @@ const faqs = [
     a: 'Calls from contacts marked "Always allow" pass through the dock without un-docking the phone. The dock has a 30-second tap-to-release for emergencies - used more than three times in a week, the app gently checks in to make sure something isn\'t wrong.',
   },
   {
-    q: "Why $89?",
+    q: "Why $79?",
     a: "Honest answer: because cast aluminum, a 60 GHz radar module, a Qi 2.0 wireless dock, an N52 magnet ring, and a 40 mm full-range driver don't cost less than that to make in small batches. Right now we're not selling - we're trying to finish the prototype. Every donation gets us closer to a sustainable unit cost.",
   },
   {
