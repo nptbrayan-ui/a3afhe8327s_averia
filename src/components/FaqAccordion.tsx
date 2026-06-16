@@ -1,4 +1,4 @@
-import {
+﻿import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "What if I share the bed with someone who works late?",
-    a: "Aveira's heartbeat signature pairs to a specific person on setup — about a 40-second calibration on the first night. If the other person is awake but you're not, the system stays idle. Two paired users on one clock is supported; more than two isn't recommended.",
+    a: "Aveira's heartbeat signature pairs to a specific person on setup - about a 40-second calibration on the first night. If the other person is awake but you're not, the system stays idle. Two paired users on one clock is supported; more than two isn't recommended.",
   },
   {
     q: "Is there a camera or microphone?",
@@ -20,15 +20,15 @@ const faqs = [
   },
   {
     q: "What if I genuinely need my phone in the middle of the night?",
-    a: 'Calls from contacts marked "Always allow" pass through the dock without un-docking the phone. The dock has a 30-second tap-to-release for emergencies — used more than three times in a week, the app gently checks in to make sure something isn\'t wrong.',
+    a: 'Calls from contacts marked "Always allow" pass through the dock without un-docking the phone. The dock has a 30-second tap-to-release for emergencies - used more than three times in a week, the app gently checks in to make sure something isn\'t wrong.',
   },
   {
     q: "Why $89?",
-    a: "Honest answer: because cast aluminum, a 60 GHz radar module, a Qi 2.0 wireless dock, an N52 magnet ring, and a 40 mm full-range driver don't cost less than that to make in small batches. Right now we're not selling — we're trying to finish the prototype. Every donation gets us closer to a sustainable unit cost.",
+    a: "Honest answer: because cast aluminum, a 60 GHz radar module, a Qi 2.0 wireless dock, an N52 magnet ring, and a 40 mm full-range driver don't cost less than that to make in small batches. Right now we're not selling - we're trying to finish the prototype. Every donation gets us closer to a sustainable unit cost.",
   },
   {
     q: "How will I know my donation is being used well?",
-    a: "We post weekly build updates on Instagram (@aveirasmartclocks). Every donor gets a personal email — a photo, a short note, and progress on whatever component your money helped buy. If we can't deliver, we refund.",
+    a: "We post weekly build updates on Instagram (@aveirasmartclocks). Every donor gets a personal email - a photo, a short note, and progress on whatever component your money helped buy. If we can't deliver, we refund.",
   },
 ]
 

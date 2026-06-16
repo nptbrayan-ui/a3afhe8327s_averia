@@ -24,13 +24,13 @@ export default function FeaturesCards() {
   return (
     <div className="mt-4 grid gap-6 md:grid-cols-3">
       {features.map((f, i) => (
-        <Card key={i} className="bg-warm-white">
-          <CardHeader>
-            <CardTitle className="font-display text-2xl font-bold tracking-tight">
+        <Card key={i} className="rounded-none bg-beige transition-all duration-300 hover:scale-[1.02]">
+          <CardHeader className="p-8 pb-0">
+            <CardTitle className="font-display text-2xl font-bold tracking-tight text-accent">
               {f.title}
             </CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="p-8 pt-4">
             <p className="text-sm leading-relaxed text-ink/60">{f.desc}</p>
           </CardContent>
         </Card>
