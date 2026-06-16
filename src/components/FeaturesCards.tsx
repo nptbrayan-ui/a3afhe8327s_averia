@@ -15,8 +15,8 @@ const features = [
     desc: "mmWave presence sensing, adaptive brightness, wireless charging, and ambient lighting work quietly in the background. Useful features that never get in the way.",
   },
   {
-    title: "Built by Makers",
-    desc: "Created by a team of four high school students passionate about engineering and design. Aveira proves everyday devices can be both functional and elegant.",
+    title: "The Cost of Scrolling",
+    desc: "Late-night screen time does more than just steal your hours; it actually keeps your brain wide awake. The bright light from your phone tricks your mind into thinking it's still daytime, making it much harder to relax and fall into a deep sleep.",
   },
 ]
 
