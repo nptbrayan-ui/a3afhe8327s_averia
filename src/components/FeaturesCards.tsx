@@ -29,7 +29,7 @@ export default function FeaturesCards() {
       {features.map((f) => (
         <Card key={f.num} className="bg-warm-white">
           <CardHeader>
-            <span className="flex h-10 w-10 items-center justify-center bg-ink text-xs font-bold text-accent-light">
+            <span className="text-xs font-bold tracking-widest text-accent">
               {f.num}
             </span>
             <CardTitle className="font-display mt-2 text-2xl font-bold tracking-tight">
