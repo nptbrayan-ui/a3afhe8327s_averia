@@ -7,17 +7,14 @@ import {
 
 const features = [
   {
-    num: "01",
     title: "Designed for Better Sleep",
-    desc: "Crafted with a sleek, minimalist form and premium materials, Aveira blends seamlessly into your bedroom sanctuary, actively detecting late-night screen time and gently interrupting the cycle to help you disconnect and drift off.",
+    desc: "Crafted with a sleek, minimalist form and premium materials, Aveira blends seamlessly into your bedroom sanctuary. It actively detects late-night screen time and gently interrupts the cycle, helping you disconnect and drift off.",
   },
   {
-    num: "02",
     title: "Smart, but Subtle",
-    desc: "mmWave presence sensing, adaptive brightness, wireless charging, and ambient lighting work quietly in the background — useful features that never get in the way.",
+    desc: "mmWave presence sensing, adaptive brightness, wireless charging, and ambient lighting work quietly in the background. Useful features that never get in the way.",
   },
   {
-    num: "03",
     title: "Built by Makers",
     desc: "Created by a team of four high school students passionate about engineering and design. Aveira proves everyday devices can be both functional and elegant.",
   },
@@ -26,13 +23,10 @@ const features = [
 export default function FeaturesCards() {
   return (
     <div className="mt-4 grid gap-6 md:grid-cols-3">
-      {features.map((f) => (
-        <Card key={f.num} className="bg-warm-white">
+      {features.map((f, i) => (
+        <Card key={i} className="bg-warm-white">
           <CardHeader>
-            <span className="text-xs font-bold tracking-widest text-accent">
-              {f.num}
-            </span>
-            <CardTitle className="font-display mt-2 text-2xl font-bold tracking-tight">
+            <CardTitle className="font-display text-2xl font-bold tracking-tight">
               {f.title}
             </CardTitle>
           </CardHeader>
