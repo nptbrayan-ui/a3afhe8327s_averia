@@ -1,0 +1,47 @@
+---
+import Nav from './Nav.astro';
+---
+
+<section id="hero" class="scroll-mt-20 pt-16">
+  <Nav />
+  <div class="mx-auto grid max-w-6xl items-center gap-0 px-6 pt-16 md:min-h-[calc(100dvh-5rem)] md:grid-cols-2 md:pt-0">
+    <div class="flex flex-col gap-8 py-16 md:pr-12">
+      <p class="text-xs font-medium uppercase tracking-[0.15em] text-accent">Coming Soon</p>
+      <h1 class="font-display text-balance text-5xl font-bold leading-none tracking-tight md:text-7xl lg:text-8xl">
+        Time,<br />
+        <span class="text-accent">Beautifully</span><br />
+        Designed.
+      </h1>
+      <p class="max-w-md text-sm leading-relaxed text-ink/60">
+        A smart alarm clock that blends into your home. Wrapped in acoustic fabric with
+        presence sensing, wireless charging, and adaptive brightness.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a
+          href="#features"
+          class="bg-ink px-6 py-3 text-xs font-medium uppercase tracking-wider text-white transition-all hover:bg-accent"
+        >
+          Learn More
+        </a>
+        <a
+          href="#support"
+          class="border border-ink/20 px-6 py-3 text-xs font-medium uppercase tracking-wider text-ink transition-all hover:border-ink/50"
+        >
+          Support Our Project
+        </a>
+      </div>
+    </div>
+    <div class="relative flex items-center justify-center py-16 md:py-0">
+      <div class="aspect-square w-full max-w-sm bg-beige">
+        <img
+          src="/product-hero.png"
+          alt="Aveira Smart Clock"
+          class="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="mx-auto max-w-6xl px-6 pb-8">
+    <div class="border-t border-ink/10"></div>
+  </div>
+</section>

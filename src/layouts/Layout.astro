@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Aveira Clocks — Time, Beautifully Designed.', description = 'Elegant smart clocks designed by a team of four high school students. Blending minimalist design with modern technology.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aveiraclocks.com" />
+    <meta property="og:image" content="https://aveiraclocks.com/og-image.png" />
+
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&f[]=zodiak@300,400,500,600,700,800,900&display=swap" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
